@@ -1,0 +1,21 @@
+BasedOnStyle: LLVM
+ColumnLimit: 130
+IndentWidth: 2
+AlignConsecutiveAssignments: true
+AlignConsecutiveBitFields: true
+AlignConsecutiveDeclarations: true
+AlignConsecutiveMacros: true
+BreakBeforeBraces: Custom
+BraceWrapping:
+  BeforeElse: true
+
+PointerAlignment: Middle
+NamespaceIndentation: Inner
+SpacesInConditionalStatement: true
+SpacesInAngles: true
+SpacesInParentheses: true
+SpacesInCStyleCastParentheses: true
+SeparateDefinitionBlocks: Always
+IndentCaseLabels: true
+IndentPPDirectives: BeforeHash
+SortIncludes: Never
