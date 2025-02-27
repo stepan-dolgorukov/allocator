@@ -57,3 +57,20 @@ make
 ```
 
 &laquo;./refman.pdf&raquo; &mdash; файл с документацией.
+
+## Форматирование исходного текста
+
+Применяется программа &laquo;ClangFormat&raquo;. Команда для установки:
+```shell
+apt install clang-format
+```
+
+В репозитории есть shell-программа &laquo;format-source-text.sh&raquo;, которая вызывает программу &laquo;clang-format&raquo; с нужными аргументами. Выдача владельцу права выполнения shell-программы:
+```shell
+chmod u+x ./format-source-text.sh
+```
+
+Запуск:
+```shell
+./format-source-text.sh
+```
