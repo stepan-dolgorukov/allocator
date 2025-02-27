@@ -7,6 +7,7 @@
 + CMake: 3.22.1
 + Doxygen: 1.9.1
 + GoogleTest: 1.11.0-3
++ ClangFormat: 14.0.0
 
 ## Сборка
 
