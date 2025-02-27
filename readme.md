@@ -10,6 +10,11 @@
 
 ## Сборка
 
+```shell
+git clone https://github.com/stepan-dolgorukov/allocator.git && \
+cd allocator
+```
+
 ### Сборка тестирующей программы
 
 Необходимо установить библиотеку &laquo;GoogleTest&raquo;. Команда установки:
