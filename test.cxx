@@ -1,7 +1,7 @@
-#include <bits/stdc++.h>
 #include <stdexcept>
 #include <thread>
 #include <chrono>
+#include <cstring>
 
 #include <gtest/gtest.h>
 
