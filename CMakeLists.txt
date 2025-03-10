@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION "3.22")
-project("allocator")
+project("allocator" LANGUAGES CXX)
 include(FetchContent)
 
 FetchContent_Declare(googletest
