@@ -10,6 +10,11 @@
 + ClangFormat: 14.0.0
 + TexLive: 2021.20220204-1
 
+Команда установки:
+```shell
+apt install g++ cmake doxygen clang-format texlive-full
+```
+
 ## Сборка
 
 ```shell
