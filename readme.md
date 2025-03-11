@@ -17,7 +17,7 @@ git clone https://github.com/stepan-dolgorukov/allocator.git && \
 cd ./allocator/ && \
 cmake -S ./ -B ./build/ && \
 cd ./build/ && \
-make
+make solution
 ```
 
 ./liballocator.so &mdash; модуль, содержащий реализацию аллокатора. \
