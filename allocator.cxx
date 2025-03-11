@@ -12,7 +12,7 @@
 
 #include "./allocator.hxx"
 
-/**
+/*!
   \brief Создать аллокатор.
   \param size_block Размер блока.
   \param blocks_amount Количество выделяемых блоков.
