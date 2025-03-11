@@ -17,3 +17,15 @@ add_library(allocator SHARED ${SOURCES_ALLOCATOR})
 add_executable(test ${SOURCES_TEST})
 include_directories(${googletest_SOURCE_DIR}/googletest/include)
 target_link_libraries(test PRIVATE gtest allocator)
+find_package(Doxygen REQUIRED)
+
+if (DOXYGEN_FOUND)
+  set(DOXYFILE ../Doxyfile)
+  add_custom_target(documentation
+                    COMMAND ${DOXYGEN_EXECUTABLE} ${DOXYFILE} && cd ./documentation/latex && make)
+
+else()
+  message("Doxygen isn't installed.")
+endif()
+
+add_custom_target(solution ALL DEPENDS allocator test documentation)
