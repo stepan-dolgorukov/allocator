@@ -39,7 +39,7 @@ allocator::allocator( std::size_t size_block, std::size_t blocks_amount )
   _storage = reinterpret_cast< std::byte * >(
       mmap( nullptr, _size_storage, PROT_READ | PROT_WRITE, MAP_PRIVATE | MAP_ANONYMOUS, -1, 0 ) );
 
-  if ( _storage == nullptr ) {
+  if ( _storage == MAP_FAILED ) {
     throw std::bad_alloc{};
   }
 
